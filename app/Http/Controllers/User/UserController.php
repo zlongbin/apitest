@@ -15,7 +15,7 @@ class UserController extends Controller
             'username'  => 'longbin',
             'pwd'       =>  'admin123',
             'qpwd'      =>  'admin123',
-            'email'     => '2569050087@qq.com',
+            'email'     => '2878094450@qq.com',
             'tel'       =>  15720386520
         ];
         $ch = curl_init();
@@ -34,7 +34,7 @@ class UserController extends Controller
     public function login(){
         $url = "http://vm.api.com/user/login";
         $post_arr = [
-            'email' =>  '2569050087@qq.com',
+            'email' =>  '2878094450@qq.com',
             'password'  => 'admin123'
         ];
         $ch = curl_init();
@@ -53,8 +53,8 @@ class UserController extends Controller
     public function my(){
         $url = "http://vm.api.com/user/my";
         $post_arr = [
-            'token' =>  "26101b6ec7f7825e",
-            'uid'  => 1
+            'token' =>  "bc40ae337f0a2a96",
+            'uid'  => 2
         ];
         $ch = curl_init();
         curl_setopt($ch,CURLOPT_URL,$url);  //需要获取的URL地址
