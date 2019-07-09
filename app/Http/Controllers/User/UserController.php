@@ -69,4 +69,7 @@ class UserController extends Controller
         curl_close($ch);
         return $info;
     }
+    public function index(){
+        return view("Login/Index");
+    }
 }

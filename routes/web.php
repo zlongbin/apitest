@@ -27,3 +27,5 @@ Route::get('/api/request',"Api\ApiController@request");
 Route::get('/user/reg',"User\UserController@reg");
 Route::get('/user/login',"User\UserController@login");
 Route::get('/user/my',"User\UserController@my");
+
+Route::get('/login/index',"User\UserController@index")->middleware("CheckLoginToken");
